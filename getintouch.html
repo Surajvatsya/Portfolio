@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="Suraj Kumar, Suraj , Suraj s4, web developer, techie">
+	<meta name="description" content="Portfolio of Suraj Kumar">
+	<meta name="author" content="Suraj Kumar">
+	<!-- For Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Suraj Kumar">
+	<meta property="og:description" content="Portfolio of Suraj Kumar">
+	<!-- <meta property="og:image" content="images/fb-og- image" /> Facebook poster to be added-->
+	<meta property="og:url" content="https://Suraj s4.github.io/">
+	<meta property="og:site_name" content="Suraj Kumar">
+	<!-- For Twitter -->
+	<meta name="twitter:card" content="website">
+	<meta name="twitter:site" content="Suraj Kumar">
+	<meta name="twitter:title" content="Suraj Kumar">
+	<meta name="twitter:description" content="Portfolio of Suraj Kumar">
+	<meta name="twitter:creator" content="@Suraj s_4">
+	<meta name="twitter:image" content="Suraj Kumar">
+	<meta itemprop="name" content="Suraj Kumar">
+	<meta itemprop="description" content="Portfolio of Suraj Kumar">
+	<meta itemprop="image" content="#">
+	<link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon_io/favicon-16x16.png">
+	<!-- Google search console -->
+	<meta name="google-site-verification" content="5eHHk7X6SknHxGb8ZufXQVgtYSX7u_nPM78J7Ta3QoE" />
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/initials-logo.css">
+	<link rel="stylesheet" href="./styles/navbar.css" nonce>
+	<link rel="stylesheet" href="./styles/content.css" nonce>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+	<noscript>
+		<link rel="stylesheet" href="./styles/initials-logo.css">
+		<link rel="stylesheet" href="./styles/navbar.css">
+		<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	</noscript>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+	<script src="./scripts/analytics.js"></script>
+
+	<style>
+		input,
+		textarea {
+			padding: 5px;
+			border-radius: 5px;
+			border: 2px solid #e0e0e0;
+			outline: none;
+			width: 100%;
+			font-size: 15px;
+			padding: 10px
+		}
+
+		input:focus,
+		textarea:focus {
+			border-color: hsl(217, 97%, 46%);
+		}
+
+		label {
+			transform: translate(15%, 90%);
+			background-color: white;
+			font-size: 15px;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			-webkit-box-shadow: 0 0 0 30px white inset;
+		}
+
+		#submit {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		#submit:hover {
+			background-color: hsl(217, 97%, 46%);
+		}
+	</style>
+	<title>Suraj Kumar | Get in touch</title>
+</head>
+
+<body>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background : white">
+
+			<!-- Navbar logo  -->
+			<a class="navbar-brand" href="./index.html">
+				<div class="initials-logo">
+					<div class="initials-top"></div>
+					<div class="initials">
+						<p class="initials-shift">NS</p>
+					</div>
+					<div class="initials-right"></div>
+				</div>
+			</a>
+
+			<!-- Toggler button -->
+			<button style="outline: none;" id="navbar-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+
+				<div class="toggle-cover">
+					<div class="toggle-top"></div>
+					<div class="toggle-mid"></div>
+					<div class="toggle-mid"></div>
+					<div class="toggle-bottom"></div>
+				</div>
+			</button>
+
+			<!-- Navbar content -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="skill.html">SKILLS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="achievements.html">ACHIEVEMENTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./projects.html">PROJECTS</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="./getintouch.html">GET IN TOUCH</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://drive.google.com/file/d/1MFFJVDZXFAUz7LyjdCVjxfQLEV7UVwEC/view?usp=sharing" target="_blank">RESUME</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<!--  Get in touch section -->
+		<div class="container-fluid">
+			<!-- Tech Profiles  -->
+
+			<div class="row" style="text-align: center;">
+				<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+					<h1>Technical</h1>
+				</div>
+			</div>
+
+			<!-- Icons -->
+			<div class="row">
+				<div class="col-1 col-lg-3"></div>
+				<div class="col-10 col-lg-6">
+					<div class="row" style="text-align: center;">
+						<div class="col-3">
+							<a href="https://www.linkedin.com/in/suraj-kumar-49b466191/" target="_blank"><img src="./Assets/Card-Image/linkedin.svg" style="height: 50px; margin-top : 50px"></a>
+
+						</div>
+						<div class="col-3">
+							<a href="https://github.com/Surajvatsya" target="_blank"><img src="./Assets/Card-Image/github.svg" style="height: 50px; margin-top : 50px"></a>
+
+						</div>
+						<div class="col-3">
+							<a href="https://leetcode.com/Suraj_Vatsya/" target="_blank"><img src="./Assets/Card-Image/leetcode.png" style="height: 50px; margin-top : 50px"></a>
+
+						</div>
+						<div class="col-3">
+							<a href="https://www.hackerrank.com/surajkumar742494" target="_blank"><img src="./Assets/Card-Image/hackerrank.png" style="height: 50px; margin-top : 50px"></a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-1 col-lg-3"></div>
+			</div>
+
+
+				<!-- Social media profiles  -->
+				<div class="row" style="text-align: center;">
+					<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+						<h1>Social media</h1>
+					</div>
+				</div>
+	
+				<!-- Icons -->
+				<div class="row">
+					<div class="col-1 col-lg-3"></div>
+					<div class="col-10 col-lg-6">
+						<div class="row" style="text-align: center;">
+
+							<div class="col-4">
+								<a href="https://www.facebook.com/profile.php?id=100010302857590" target="_blank"><img src="./Assets/Card-Image/facebook.svg" style="height: 50px; margin-top : 50px"></a>
+							</div>
+							<div class="col-4">
+								<a href="https://twitter.com/SurajVatsya" target="_blank"><img src="./Assets/Card-Image/twitter.svg" style="height: 50px; margin-top : 50px"></a>
+
+
+							</div>
+							<div class="col-4">
+								<a href="https://www.instagram.com/surajvatsya/" target="_blank"><img src="./Assets/Card-Image/instagram.svg" style="height: 50px; margin-top : 50px"></a>
+
+							</div>
+
+						</div>
+	
+					</div>
+					<div class="col-1 col-lg-3"></div>
+				</div>
+
+			<!-- Heading  -->
+			<div class="row" style="text-align: center;">
+				<div class="col-12" style="margin-top : 150px; margin-bottom: 35px;">
+					<h1>Get in touch</h1>
+				</div>
+			</div>
+
+			<!-- Form -->
+			<div class="row" style="margin-bottom: 100px;">
+				<div class="col-1 col-lg-3"></div>
+				<div class="col-10 col-lg-6" style="border:2px solid #e0e0e0; border-radius: 15px;" id="form-border">
+					<form>
+
+						<div class="row" style="text-align: left;	">
+							<div class="col-12 col-lg-6" style="padding : 10px 20px;">
+								<label for="name">Full name<sup>*</sup></label>
+								<input autocapitalize="sentences" type="text" id="name" oninput="nameVerify(event); activateBtn()">
+							</div>
+							<div class="col-12 col-lg-6" style="padding : 10px 20px;">
+								<label for="email">Email<sup>*</sup></label>
+								<input type="email" id="email" oninput="emailVerify(event); activateBtn()">
+							</div>
+							<div class="col-12" style="padding : 15px 20px;">
+								<label for="message">Message<sup>*</sup></label>
+								<textarea id="message" style="resize : none; width : 100%; min-height: 150px;" oninput="messageVerify(event); activateBtn()"></textarea>
+							</div>
+							<div class="col-12" style="padding : 0px 20px 20px; text-align: center;">
+								<button id="submit" style="min-width: 40%;" class="btn btn-primary" type="submit" disabled>Submit</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div class="col-1 col-lg-3"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-12" style="padding:10px 0px; text-align: center; background-color:#f8f9fa;">
+					&copy; 2022 Suraj Kumar
+				</div>
+			</div>
+		</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./scripts/getintouch.js"></script>
+	<script src="./scripts/navbar.js" async></script>
+	<script src="./scripts/bootstrap.bundle.min.js" async></script>
+
+</body>
+
+</html>
